@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <title>FCC: SURVEY FORM</title>
+</head>
+<body>
+    <div class="container">
+      
+        <header class="header">
+          
+            <h1 id="title">Free Code Camp: Responsive Design Survey Form</h1>
+          
+            <p id="description">Thank you for your time!</p>
+      
+        </header>
+
+        <form action="" id="survey-form">
+            
+            <div class="item">
+                <label for="name" id="name-label">NAME</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Please enter your name" required>
+            </div>
+
+            <div class="item">
+                <label for="email" id="email-label">E-MAIL</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Please enter your e-mail" required>
+            </div>
+
+            <div class="item">
+                <label for="age" id="number-label">AGE</label>
+                <input type="number" name="age" id="number" min="18" max="150" class="form-control" placeholder="Please enter your age" required>
+            </div>
+
+            <div class="item">
+               
+                <label for="dropdown">Please select your gender: </label>
+                <select id="dropwdown" name="gender" class="form-control" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="trans">Transexual</option>
+                    <option value="nonBinary">Non-Binary</option>
+                    <option value="gay">Gay</option>
+                    <option value="other">Other</option>
+                    <option value="no">I would rather not say</option>
+                </select>
+
+            </div>
+
+            <div class="item checkList">
+
+                <p>What do you like the most about coding:</p>
+               
+                
+                <label for="potential"><input type="radio" id="potential">Its potential</label> 
+                <label for="homeOffice"><input type="radio" id="homeOffice">Working from home</label>
+                <label for="unlimited"><input type="radio" id="unlimited">Its creativity </label>
+
+            </div>
+
+            <div class="item checkBox">
+                <p>What would you like to do with your knowledge, check more than one if needed</p>
+            
+                <label for="webDesign"><input type="checkbox" id="webDesign">Web Design</label>
+
+                <label for="frontEnd"><input type="checkbox" id="frontEnd">Building interactive websites</label>
+                
+                <label for="appDev"><input type="checkbox" id="appDev">Creating Apps</label>
+                
+                <label for="gameDev"><input type="checkbox" id="gameDev">Developing games</label>
+                
+                <label for="aI"><input type="checkbox" id="aI">Artificial Intelligence</label>
+                
+                <label for="backEnd"><input type="checkbox" id="backEnd">Designing logics and databases</label>
+                
+                            
+            </div>
+
+            <div class="item textBox">
+                <p>Anything to add?</p>
+
+                <input type="text-area" placeholder="Add your suggestions here">
+            </div>
+
+            <div class="item">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+
+    </div>
+</body>
+</html>
